@@ -1,0 +1,11 @@
+[package]
+name = "btix"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crossterm = "0.28"
+syntect = { version = "5.2", default-features = false, features = ["default-fancy"] }
+
+[profile.release]
+opt-level = 3
